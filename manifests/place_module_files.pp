@@ -1,4 +1,4 @@
-# = Define: apache::module
+# = Define: apache_addfiles::place_module_files
 #
 # This define places files and if required extracts files being archives.
 # It respects the dependencies between modules and module files and notifies
@@ -21,13 +21,13 @@
 #
 # == Examples
 #
-# apache::place_module_files { "place_ssl_files": 
+# apache_addfiles::place_module_files { "place_ssl_files": 
 #   module_Name => 'ssl',
 # 	source => "puppet:///extra_files/ssl_files.zip",
 #	target_dir => "/etc/httpd/ssl",
 #	files_need_to_be_extracted => true,
 # }
-define apache::place_module_files ($source,
+define apache_addfiles::place_module_files ($source,
 	$module_name,
 	$target_dir,
 	$notify_service = true,
