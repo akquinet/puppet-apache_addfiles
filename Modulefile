@@ -1,4 +1,4 @@
-name    'puppet-apache_addfiles'
+name    'akquinet-apache_addfiles'
 version '1.0.0'
 source 'https://github.com/akquinet/puppet-apache_addfiles'
 author 'saheba'
@@ -8,6 +8,6 @@ description 'This module is a little extension to example42/puppet-apache that e
 project_page 'http://www.akquinet.de/entwicklungsinfrastrukturen.html'
 
 ## Add dependencies, if any:
-dependency 'example42/puppet-apache', '>= 2.0.7'
+dependency 'example42/apache', '>= 2.0.7'
 dependency 'example42/puppi', '>= 2.0.8'
-dependency 'akquinet/puppet-archmngt', '>=1.0.0'
+dependency 'akquinet/archmngt', '>=1.0.0'
